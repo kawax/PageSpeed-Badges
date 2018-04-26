@@ -5,7 +5,7 @@ const express = require("express");
 const axios = require("axios");
 
 const app = express();
-app.set("port", (process.env.PORT || 3000));
+app.set("port", (process.env.PORT || 30000));
 
 app.get("/", function (req, res) {
   res.header("Cache-Control", "private, no-cache, no-store, must-revalidate");
